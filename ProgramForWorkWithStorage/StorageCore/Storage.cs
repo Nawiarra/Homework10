@@ -52,9 +52,9 @@ namespace StorageCore
             return "Product was added into storage";
         }
 
-        public static void DeleteProductToStorage(Product productForDelete)
+        public static void DeleteProductFromStorage(int index)
         {
-            ProductStorage.Remove(productForDelete);
+            ProductStorage.RemoveAt(index);
         }
 
         public static void ExpandStorage()
