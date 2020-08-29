@@ -7,13 +7,13 @@ using ProductCore;
 
 namespace StorageCore
 {
-    public class Storage
+    public static class Storage
     {
-        private int volume;
+        private static int volume;
 
-        private List<Product> ProductStorage = new List<Product>();
+        private static List<Product> ProductStorage = new List<Product>();
 
-        public string CheckProductExpiryDate(Product checkingProduct)
+        public static string CheckProductExpiryDate(Product checkingProduct)
         {
             DateTime checkingDate = checkingProduct.baseProduct.ShowExpirationDate();
 
@@ -27,7 +27,7 @@ namespace StorageCore
             return "This thing not expired";
         }
 
-        public List<string> ShowListOfProduct()
+        public static List<string> ShowListOfProduct()
         {
             List<string> productInfo = new List<string>();
 
@@ -39,12 +39,20 @@ namespace StorageCore
             return productInfo;
         }
 
-        public void AddProductToStorage(Product productForAdd)
+        public static string AddProductToStorage(Product productForAdd)
         {
-            ProductStorage.Add(productForAdd);
+            if (volume > ProductStorage.Count)
+            {
+                ProductStorage.Add(productForAdd);
+            }
+            else
+            {
+                return "The storage is the fullest";
+            }
+            return "Product was added into storage";
         }
 
-        public void DeleteProductToStorage(Product productForDelete)
+        public static void DeleteProductToStorage(Product productForDelete)
         {
             ProductStorage.Remove(productForDelete);
         }
