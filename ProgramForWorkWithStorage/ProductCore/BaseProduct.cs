@@ -9,8 +9,14 @@ namespace ProductCore
     public class BaseProduct
     {
 
-        public DateTime dateOfDelivery { get; set; }
-        public int countDayToExpirationDate { get; set; }
+        public DateTime dateOfDelivery { get; private set; }
+        public int countDayToExpirationDate { get; private set; }
+
+        public BaseProduct(DateTime dateOfDelivery, int countDayToExpirationDate)
+        {
+            this.dateOfDelivery = dateOfDelivery;
+            this.countDayToExpirationDate = countDayToExpirationDate;
+        }
 
         public DateTime ShowExpirationDate()
         {
