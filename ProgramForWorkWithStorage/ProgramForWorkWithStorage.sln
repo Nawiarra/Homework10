@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCore", "ProductCore\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageCore", "StorageCore\StorageCore.csproj", "{97840A01-297E-4973-8358-E5D18F98A72E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationLib", "ValidationLib\ValidationLib.csproj", "{7953A8CC-F53F-4F00-B7EE-92269EA9E841}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{97840A01-297E-4973-8358-E5D18F98A72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97840A01-297E-4973-8358-E5D18F98A72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97840A01-297E-4973-8358-E5D18F98A72E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7953A8CC-F53F-4F00-B7EE-92269EA9E841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7953A8CC-F53F-4F00-B7EE-92269EA9E841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7953A8CC-F53F-4F00-B7EE-92269EA9E841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7953A8CC-F53F-4F00-B7EE-92269EA9E841}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

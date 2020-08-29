@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProductCore;
+using StorageCore;
 
 namespace ProgramForWorkWithStorage
 {
@@ -10,6 +12,12 @@ namespace ProgramForWorkWithStorage
     {
         static void Main(string[] args)
         {
+
+        }
+
+        enum MenuItem
+        {
+
         }
     }
 }
