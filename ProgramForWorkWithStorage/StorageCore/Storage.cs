@@ -61,6 +61,11 @@ namespace StorageCore
         {
             volume += volume;
         }
+        
+        public static Product GetItem(int index)
+        {
+            return ProductStorage[index];
+        }
 
     }
 }
