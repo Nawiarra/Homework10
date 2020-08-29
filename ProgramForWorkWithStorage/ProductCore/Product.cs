@@ -13,7 +13,7 @@ namespace ProductCore
 
         public BaseProduct baseProduct;
 
-        Product(string name, decimal price, DateTime dateOfDelivery, int countDayToExpirationDate)
+        public Product(string name, decimal price, DateTime dateOfDelivery, int countDayToExpirationDate)
         {
             this.name = name;
             this.price = price;
@@ -22,7 +22,7 @@ namespace ProductCore
 
         public override string ToString()
         {
-            return $"Name: {this.name}.\nPrice: {this.price}.\n Expiration Date: {this.baseProduct.ShowExpirationDate()} ";
+            return $"Name: {this.name}.\nPrice: {this.price}.\nExpiration Date: {this.baseProduct.ShowExpirationDate()} ";
         }
 
     }
