@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,7 +32,7 @@ namespace ValidationLib
         {
             DateTime dtOut;
 
-            while (!DateTime.TryParse(line, out dtOut))
+            while (!DateTime.TryParseExact(line, "dd.MM.yyyy", null, DateTimeStyles.None, out dtOut))
             {
                 return DateTime.MinValue;
             }
