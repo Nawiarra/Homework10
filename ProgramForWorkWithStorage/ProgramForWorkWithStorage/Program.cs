@@ -133,7 +133,7 @@ namespace ProgramForWorkWithStorage
                             Storage.DeleteProductFromStorage(numberDelOrChangeProduct - 1);
                         }
                         break;
-                    case MenuItem.Exit:
+                    case MenuItem.Exit: 
                         {
                             return;
                         }
