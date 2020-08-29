@@ -33,7 +33,7 @@ namespace ValidationLib
 
             while (!DateTime.TryParse(line, out dtOut))
             {
-                Console.WriteLine("Введите дату в формате: {0:d}", new DateTime(2008, 1, 7));
+                return DateTime.MinValue;
             }
 
             return dtOut;
