@@ -9,7 +9,7 @@ namespace StorageCore
 {
     public static class Storage
     {
-        private static int volume;
+        private static int volume = 100;
 
         private static List<Product> ProductStorage = new List<Product>();
 
@@ -55,6 +55,11 @@ namespace StorageCore
         public static void DeleteProductToStorage(Product productForDelete)
         {
             ProductStorage.Remove(productForDelete);
+        }
+
+        public static void ExpandStorage()
+        {
+            volume += volume;
         }
 
     }
